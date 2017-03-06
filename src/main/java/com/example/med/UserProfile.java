@@ -1,4 +1,4 @@
-package com.example.med;
+package com.example.medbox;
 
 import android.util.Log;
 
