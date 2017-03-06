@@ -1,4 +1,4 @@
-package com.example.med;
+package com.example.medbox;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -18,7 +18,7 @@ import com.couchbase.lite.auth.Authenticator;
 import com.couchbase.lite.auth.AuthenticatorFactory;
 import com.couchbase.lite.replicator.Replication;
 import com.couchbase.lite.util.Log;
-import com.example.med.util.StringUtil;
+import com.example.medbox.util.StringUtil;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -149,7 +149,7 @@ public class Application extends android.app.Application implements Replication.
         stopReplication();
         setDatabase(null);
 
-        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
         intent.setAction(LoginActivity.ACTION_LOGOUT);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
