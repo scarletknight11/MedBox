@@ -1,4 +1,4 @@
-package com.example.med.util;
+package com.example.medbox.util;
 
 import android.content.Context;
 import android.graphics.Canvas;
