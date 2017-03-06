@@ -1,4 +1,4 @@
-package com.example.med.util;
+package com.example.medbox.util;
 
 import android.app.Activity;
 import android.content.Context;
