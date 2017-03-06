@@ -1,4 +1,4 @@
-package com.example.med;
+package com.example.medbox;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -26,7 +26,7 @@ import com.couchbase.lite.QueryEnumerator;
 import com.couchbase.lite.QueryRow;
 import com.couchbase.lite.TransactionalTask;
 import com.couchbase.lite.util.Log;
-import com.example.med.util.LiveQueryAdapter;
+import com.example.medbox.util.LiveQueryAdapter;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
