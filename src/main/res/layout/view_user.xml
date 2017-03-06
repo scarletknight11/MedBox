@@ -18,12 +18,12 @@
             android:layout_weight="1"
             android:layout_gravity="center_vertical"
             android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
-        <CheckBox
-            android:id="@+id/checked"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
-            android:focusable="false"
-            android:focusableInTouchMode="false"/>
+        <!--<CheckBox-->
+            <!--android:id="@+id/checked"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:focusable="false"-->
+            <!--android:focusableInTouchMode="false"/>-->
     </LinearLayout>
 </LinearLayout>
