@@ -1,4 +1,4 @@
-package com.example.med;
+package com.example.medbox;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -17,7 +17,7 @@ import com.couchbase.lite.Document;
 import com.couchbase.lite.LiveQuery;
 import com.couchbase.lite.Query;
 import com.couchbase.lite.util.Log;
-import com.example.med.util.LiveQueryAdapter;
+import com.example.medbox.util.LiveQueryAdapter;
 
 import java.util.ArrayList;
 import java.util.HashMap;
