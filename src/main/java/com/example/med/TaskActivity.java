@@ -1,4 +1,4 @@
-package com.example.med;
+package com.example.medbox;
 
 import android.app.AlertDialog;
 import android.content.ContentResolver;
@@ -36,8 +36,8 @@ import com.couchbase.lite.LiveQuery;
 import com.couchbase.lite.Query;
 import com.couchbase.lite.UnsavedRevision;
 import com.couchbase.lite.util.Log;
-import com.example.med.util.ImageUtil;
-import com.example.med.util.LiveQueryAdapter;
+import com.example.medbox.util.ImageUtil;
+import com.example.medbox.util.LiveQueryAdapter;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
