@@ -5,10 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
+     android:backgroundTint="@android:color/darker_gray"
     android:orientation="vertical"
-    tools:context="com.example.medbox.MainActivity" >
-
-
+    tools:context="com.example.medbox.MainActivity">
 
 
     <TextView
@@ -23,63 +22,61 @@
 
     <ScrollView
         android:id="@+id/ScrollView01"
-        android:layout_width="match_parent"
-        android:layout_height="100px"
-        android:layout_weight="0.69" >
+        android:layout_width="381dp"
+        android:layout_height="0dp"
+        android:background="@android:color/darker_gray">
 
         <TableLayout
             android:id="@+id/amortization"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <Button
-                android:id="@+id/scanner"
-                style="@android:style/Widget.Button.Small"
-                android:layout_width="140dp"
-                android:layout_height="80dp"
-                android:layout_margin="10dp"
-                android:background="@drawable/create"
-                android:backgroundTint="@android:color/darker_gray"
-                android:gravity="center"
-                android:onClick="Create"
-                android:shadowColor="#A8A8A8"
-                android:text="Create"
-                android:textSize="36dp" />
+            android:layout_height="match_parent">
 
             <!--<Button-->
-                <!--android:id="@+id/scanner12"-->
-                <!--android:layout_width="140dp"-->
-                <!--android:layout_height="80dp"-->
-                <!--android:layout_gravity="center"-->
-                <!--android:layout_margin="10dp"-->
-                <!--android:background="@drawable/button"-->
-                <!--android:backgroundTint="@android:color/holo_orange_dark"-->
-                <!--android:gravity="center"-->
-                <!--android:onClick="scanQR"-->
-                <!--android:shadowColor="#05A80A"-->
-                <!--android:text="Scan"-->
-                <!--android:textSize="18dp" />-->
+            <!--android:id="@+id/scanner12"-->
+            <!--android:layout_width="140dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:background="@drawable/button"-->
+            <!--android:backgroundTint="@android:color/holo_orange_dark"-->
+            <!--android:gravity="center"-->
+            <!--android:onClick="scanQR"-->
+            <!--android:shadowColor="#05A80A"-->
+            <!--android:text="Scan"-->
+            <!--android:textSize="18dp" />-->
 
-            <Button
-                android:id="@+id/scanner3"
-                android:layout_width="140dp"
-                android:layout_height="80dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:background="@drawable/view"
-                android:backgroundTint="@android:color/darker_gray"
-                android:gravity="center"
-                android:onClick="View"
-                android:shadowColor="#3016D9"
-                android:text="View"
-                android:textSize="36dp"
-                style="@android:style/Widget.Button.Small" />
-
-
+            <!--<Button-->
+            <!--android:id="@+id/scanner3"-->
+            <!--android:layout_width="140dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:background="@drawable/view"-->
+            <!--android:backgroundTint="@android:color/darker_gray"-->
+            <!--android:gravity="center"-->
+            <!--android:onClick="View"-->
+            <!--android:shadowColor="#3016D9"-->
+            <!--android:text="View"-->
+            <!--android:textSize="36dp"-->
+            <!--style="@android:style/Widget.Button.Small" />-->
 
 
         </TableLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/scanner"
+        style="@android:style/Widget.Button.Small"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/create"
+        android:backgroundTint="@color/colorPrimary"
+        android:gravity="center"
+        android:onClick="Create"
+        android:shadowColor="#A8A8A8"
+        android:text="Create/View"
+        android:textSize="36dp" />
 
 </LinearLayout>
 
