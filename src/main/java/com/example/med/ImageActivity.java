@@ -15,10 +15,14 @@ import com.couchbase.lite.Document;
 
 import java.io.IOException;
 import java.io.InputStream;
+import android.widget.ZoomButton;
 
 public class ImageActivity extends AppCompatActivity {
     public static final String INTENT_TASK_DOC_ID = "image";
-
+    ZoomButton zoom;
+    ImageView img;
+    ZoomButton zoom2;
+    ImageView img2;
     private String mTaskDocId;
 
     @Override
@@ -26,6 +30,7 @@ public class ImageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
         if (savedInstanceState != null)
             mTaskDocId = savedInstanceState.getString(INTENT_TASK_DOC_ID);
@@ -38,7 +43,6 @@ public class ImageActivity extends AppCompatActivity {
         Attachment attachment = document.getCurrentRevision().getAttachment("image");
         if (attachment == null)
             return;
-
         Bitmap image = null;
         InputStream is = null;
         try {
@@ -49,7 +53,6 @@ public class ImageActivity extends AppCompatActivity {
         } finally {
             if (is != null) try { is.close(); } catch (IOException e) { }
         }
-
         ImageView imageView = (ImageView) findViewById(R.id.image);
         imageView.setImageBitmap(image);
         imageView.setOnClickListener(new View.OnClickListener() {
@@ -58,7 +61,40 @@ public class ImageActivity extends AppCompatActivity {
                 finish();
             }
         });
-    }
+        zoom = (ZoomButton) findViewById(R.id.zoomButton1);
+        img = (ImageView) findViewById(R.id.image);
+
+        zoom.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+
+                float x = img.getScaleX();
+                float y = img.getScaleY();
+
+                img.setScaleX(x+2);
+                img.setScaleY(y+2);
+            }
+        });
+
+    zoom = (ZoomButton) findViewById(R.id.zoomButton2);
+    img = (ImageView) findViewById(R.id.image);
+
+        zoom.setOnClickListener(new View.OnClickListener() {
+
+        @Override
+        public void onClick(View v) {
+            // TODO Auto-generated method stub
+
+            float x = img.getScaleX();
+            float y = img.getScaleY();
+
+            img.setScaleX(x-2);
+            img.setScaleY(y-2);
+        }
+    });
+}
 
     public void onSaveInstanceState(Bundle savedInstanceState) {
         savedInstanceState.putString(INTENT_TASK_DOC_ID, mTaskDocId);
